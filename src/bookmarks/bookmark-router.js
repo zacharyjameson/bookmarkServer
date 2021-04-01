@@ -39,7 +39,8 @@ bookmarkRouter
     logger.info(`Bookmark with id ${bookmark.id} created`);
     res
       .status(201)
-      .location(`http://localhost:8000/add-bookmark/${bookmark.id}`);
+      .location(`http://localhost:8000/add-bookmark/${bookmark.id}`)
+      .json(bookmark);
   });
 
 bookmarkRouter

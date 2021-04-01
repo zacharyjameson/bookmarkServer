@@ -2,3 +2,6 @@
 {"message":"Unauthorized request to path: /add-bookmark","level":"error"}
 {"message":"Bookmark with id 0183f826-a168-46f6-9f8d-271e6f166e87 created","level":"info"}
 {"message":"Bookmark with id 240fb50f-1055-4643-9bc3-0680a9ac055b created","level":"info"}
+{"message":"Bookmark with id 57036725-08dc-45ba-ba29-1ab03cd411aa created","level":"info"}
+{"message":"Bookmark with id 57036725-08dc-45ba-ba29-1ab03cd411aa deleted.","level":"info"}
+{"message":"Bookmark with id 57036725-08dc-45ba-ba29-1ab03cd411aa not found.","level":"error"}
