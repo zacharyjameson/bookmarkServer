@@ -8,7 +8,7 @@ const bookmarkRouter = express.Router();
 const bodyParser = express.json();
 
 bookmarkRouter
-  .route("/add-bookmark")
+  .route("/bookmarks")
   .get((req, res) => {
     res.json(store.bookmarks);
   })
@@ -39,12 +39,12 @@ bookmarkRouter
     logger.info(`Bookmark with id ${bookmark.id} created`);
     res
       .status(201)
-      .location(`http://localhost:8000/add-bookmark/${bookmark.id}`)
-      .json(bookmark);
+      .location(`http://localhost:8000/bookmarks/${bookmark.id}`)
+      .json(bookmark);  
   });
 
 bookmarkRouter
-  .route("/add-bookmark/:bookmark_id")
+  .route("/bookmarks/:bookmark_id")
   .get((req, res) => {
     const { bookmark_id } = req.params;
 
