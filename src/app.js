@@ -6,7 +6,7 @@ const cors = require("cors");
 const { NODE_ENV } = require("./config");
 const bookmarkRouter = require("./bookmarks/bookmark-router");
 const validateBearerToken = require("./validate-bearer-token");
-const errorHandler = require("../error-handler");
+const errorHandler = require("./error-handler");
 
 const app = express();
 
