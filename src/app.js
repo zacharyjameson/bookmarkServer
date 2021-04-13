@@ -4,7 +4,7 @@ const morgan = require("morgan");
 const helmet = require("helmet");
 const cors = require("cors");
 const { NODE_ENV } = require("./config");
-const bookmarkRouter = require("./bookmarks/bookmark-router");
+const bookmarksRouter = require("./bookmarks/bookmarks-router");
 const validateBearerToken = require("./validate-bearer-token");
 const errorHandler = require("./error-handler");
 
@@ -17,7 +17,7 @@ app.use(helmet());
 app.use(cors());
 app.use(validateBearerToken);
 
-app.use(bookmarkRouter);
+app.use(bookmarksRouter);
 
 app.get("/", (req, res) => {
   res.send("Hello, world!");
